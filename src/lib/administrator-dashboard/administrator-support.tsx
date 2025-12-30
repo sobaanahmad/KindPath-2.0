@@ -47,51 +47,41 @@ export default function AdminSupport() {
           <Input
             type="text"
             placeholder="Full Name"
-            className="flex-1 text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 text-black !placeholder-black ml-2"
+            className="flex-1 text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 text-black !placeholder-black"
           />
         </div>
+
         <div
-          className="flex flex-col w-135 h-16
-             rounded-[12px]
-             focus-within:ring-2 focus-within:ring-gray-300
-             focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-75 p-2"
+          className="flex items-center space-x-1 w-135 h-15 
+                 rounded-[12px]
+                 focus-within:ring-2 focus-within:ring-gray-300
+                 focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-75"
         >
-          <label className="flex flex-col">
-            <span className="text-black text-[14px] font-[500] ml-2">
-              Email
-            </span>
-            <span className="text-gray-400 text-[13px] font-[500] mt-1 ml-2">
-              Enter your email address
-            </span>
-          </label>
           <Input
             type="text"
-            className="mt-1 text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 text-black"
+            placeholder="Email"
+            className="flex flex-col text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 absolute top-0 text-black !placeholder-black"
           />
         </div>
+
         <div
-          className="flex flex-col w-135 h-55
-             rounded-[12px]
-             focus-within:ring-2 focus-within:ring-gray-300
-             focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-96 p-2"
+          className="flex items-center space-x-1 w-135 h-55 
+                 rounded-[12px]
+                 focus-within:ring-2 focus-within:ring-gray-300
+                 focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-96"
         >
-          <label className="flex flex-col">
-            <span className="text-black text-[14px] font-[500] ml-2">
-              Describe your inquiry
-            </span>
-            <span className="text-gray-400 text-[13px] font-[500] mt-1 ml-2">
-              Where can we help?
-            </span>
-          </label>
           <Input
             type="text"
-            className="mt-1 text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 text-black"
+            placeholder="Describe your inquiry"
+            className="flex flex-col text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 absolute top-0 text-black !placeholder-black"
           />
         </div>
+
         <Button className="mt-101 w-135 h-12 mb-20 rounded-[12px] bg-[#074799] text-white cursor-pointer hover:bg-[#074799] text-[15px] font-[600]">
           Submit
         </Button>
       </div>
+
       <div>
         <img
           src="KindPath Social Media Ads - Users 2.png"
