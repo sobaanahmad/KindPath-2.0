@@ -1108,7 +1108,7 @@ const AdministratorTable = () => {
       </div>
       <div className="mt-2 pl-2 py-2 pr-2">
         <Table>
-          <TableHeader className="bg-[#162958] text-white h-13">
+          <TableHeader className="[&_tr>th]:bg-[#162958] [&_tr>th]:hover:bg-[#162958] text-white h-13">
             <TableRow>
               <TableHead className="text-white text-[14px] font-[400] sansfont">
                 User ID
