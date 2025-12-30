@@ -67,7 +67,7 @@ export default function AdminReports() {
               <AccordionContent className="flex flex-wrap gap-21 items-center">
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2 mt-2"
                   />
@@ -75,7 +75,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -83,7 +83,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -91,7 +91,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -99,7 +99,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -107,7 +107,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -115,7 +115,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -123,7 +123,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -131,7 +131,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -139,7 +139,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
@@ -147,7 +147,7 @@ export default function AdminReports() {
                 </div>
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
-                    src="description.png"
+                    src="/description.png"
                     alt="description"
                     className="w-15 h-20 mb-2"
                   />
