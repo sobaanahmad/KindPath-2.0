@@ -140,5 +140,124 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-   font-family: 'DM Sans', sans-serif;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
+
+.sansfont {
+  font-family: "DM Sans", sans-serif;
+}
+/* Neue Haas Display Fonts */
+
+/* XXThin */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayXXThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayXXThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* XThin */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayXThin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayXThinItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Thin */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayThin.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayThinItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayLight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayLightItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Roman / Regular */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayRomanItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayMedium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayMediumItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayBoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayBlack.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: url("./fonts/NeueHaasDisplayBlackItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+

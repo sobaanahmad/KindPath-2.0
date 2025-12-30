@@ -46,9 +46,9 @@ export default function AdminPasswordReset() {
           alt="KP Logo"
           className="h-48 w-100 ml-5"
         />
-        <h1 className="text-[20px] font-[600] text-white">Password Reset</h1>
+        <h1 className="text-[20px] font-[600] text-white mt-4">Password Reset</h1>
 
-        <Card className="w-full max-w-sm mt-6 rounded-[24px]">
+        <Card className="w-full max-w-sm mt-2 rounded-[24px]">
           <CardContent>
             <Form {...form}>
               <form
@@ -71,7 +71,7 @@ export default function AdminPasswordReset() {
                       <div className="absolute left-3 top-3 pointer-events-none flex flex-col space-y-1.5">
                         {focusedField !== "new" && !field.value && (
                           <>
-                            <span className="text-black text-[13px] font-[500] leading-4">
+                            <span className="text-black text-[14px] font-[500] leading-4">
                               Enter New Password
                             </span>
                             <span className="text-[#8E8E93] text-[13px] font-[500] leading-4">
@@ -100,7 +100,7 @@ export default function AdminPasswordReset() {
                       <div className="absolute left-3 top-3 pointer-events-none flex flex-col space-y-1.5">
                         {focusedField !== "confirm" && !field.value && (
                           <>
-                            <span className="text-black text-[13px] font-[500] leading-4">
+                            <span className="text-black text-[14px] font-[500] leading-4">
                               Confirm Password
                             </span>
                             <span className="text-[#8E8E93] text-[13px] font-[500] leading-4">
@@ -115,7 +115,7 @@ export default function AdminPasswordReset() {
                 />
                 <Button
                   type="submit"
-                  className="w-full h-10 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer mt-5"
+                  className="w-full text-[14px] font-[600] h-10 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer mt-2"
                 >
                   Continue
                 </Button>

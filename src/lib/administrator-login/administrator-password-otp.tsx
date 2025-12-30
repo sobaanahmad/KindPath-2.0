@@ -37,11 +37,11 @@ export default function AdminPasswordOtp() {
           alt="KP Logo"
           className="h-48 w-100 ml-5"
         />
-        <h1 className="text-[20px] font-[600] text-white">Forgot Password</h1>
-        <Card className="w-full max-w-sm mt-6 rounded-[24px]">
+        <h1 className="text-[20px] font-[600] text-white mt-4">Forgot Password</h1>
+        <Card className="w-full max-w-sm mt-2 rounded-[24px]">
           <CardContent>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
-              <h1 className="text-center text-[16px] font-600">
+              <h1 className="text-center text-[16px] font-500">
                 We have sent a code to mel@kindpath.health. Enter the code to
                 get started.
               </h1>
@@ -68,7 +68,7 @@ export default function AdminPasswordOtp() {
               />
               <Button
                 type="submit"
-                className="w-full h-10 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer mb-6"
+                className="w-full text-[14px] font-[600] h-10 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer mb-6"
               >
                 Continue
               </Button>

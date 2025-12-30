@@ -7,7 +7,7 @@ export default function AdminSettingsHeader() {
         </div>
         <div className="flex flex-col ml-317 absolute top-5">
           <h1 className="font-[600] text-[12px]">Jack Lorrund</h1>
-          <h1 className="font-[500] text-[12px] -mt-1">Psycologist</h1>
+          <h1 className="font-[500] text-[12px] -mt-1">Psychologist</h1>
         </div>
       </div>
   );

@@ -41,10 +41,10 @@ export default function AdministratorLogin() {
           alt="KP Logo"
           className="h-48 w-100 ml-5"
         />
-        <h1 className="text-[20px] font-[600] text-white">
+        <h1 className="text-[20px] font-[600] text-white mt-4">
           Administrator Login
         </h1>
-        <Card className="w-full max-w-sm mt-6 rounded-[24px]">
+        <Card className="w-full max-w-sm mt-2 rounded-[24px]">
           <CardContent>
             <Form {...form}>
               <form
@@ -68,7 +68,7 @@ export default function AdministratorLogin() {
                       <div className="absolute left-3 top-3 pointer-events-none flex flex-col space-y-1.5">
                         {!emailFocused && !field.value && (
                           <>
-                            <span className="text-black text-[13px] font-[500] leading-4">
+                            <span className="text-black text-[14px] font-[500] leading-4">
                               Email
                             </span>
                             <span className="text-[#8E8E93] text-[13px] font-[500] leading-4">
@@ -98,7 +98,7 @@ export default function AdministratorLogin() {
                       <div className="absolute left-3 top-3 pointer-events-none flex flex-col space-y-1.5">
                         {!passwordFocused && !field.value && (
                           <>
-                            <span className="text-black text-[13px] font-[500] leading-4">
+                            <span className="text-black text-[14px] font-[500] leading-4">
                               Password
                             </span>
                             <span className="text-[#8E8E93] text-[13px] font-[500] leading-4">
@@ -119,9 +119,9 @@ export default function AdministratorLogin() {
                 </Link>
                 <Button
                   type="submit"
-                  className="w-full h-10 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer"
+                  className="w-full h-10 text-[14px] font-[600] bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer"
                 >
-                  Login
+                  Log In
                 </Button>
               </form>
             </Form>

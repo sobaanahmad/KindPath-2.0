@@ -30,11 +30,11 @@ export default function AdministratorBarchart() {
   return (
     <div className="h-100 w-140 p-4 relative">
       <div className="flex items-center gap-2">
-        <h1 className="text-[16px] font-[700]">Risk Levels by Severity</h1>
+        <h1 className="text-[16px] font-[700] sansfont">Risk Levels by Severity</h1>
         <CircleQuestionMark className="size-4 text-white bg-black rounded-full p-0.5" />
       </div>
       <Card className="shadow-none border-none absolute left-0">
-        <ChartContainer className="h-[240px] w-[450px] text-black" config={{}}>
+        <ChartContainer className="h-[250px] w-[470px] text-black" config={{}}>
           <BarChart
             data={chartData}
             margin={{ top: 20, right: 20, left: 20, bottom: 40 }}

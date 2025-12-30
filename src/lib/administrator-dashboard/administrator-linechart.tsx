@@ -36,19 +36,19 @@ export default function AdministratorLineChart() {
     <div className="absolute top-85 ml-52 w-299">
       <Card className="h-75 w-294 shadow-none border-none">
         <CardHeader>
-          <CardTitle className="text-black text-[16px] font-[700]">
+          <CardTitle className="text-black text-[16px] font-[700] sansfont">
             Risk Trends
           </CardTitle>
-          <div className="flex gap-6 mt-2">
+          <div className="flex gap-3 mt-2">
             <div className="flex items-center gap-2 text-sm text-black">
               <span className="w-2 h-2 bg-[#E3C5A7]" />
-              <h1 className="text-[#6C6C6C] text-[14px] font-[400]">
+              <h1 className="text-[#6C6C6C] text-[14px] font-[400] sansfont">
                 Average Trend
               </h1>
             </div>
             <div className="flex items-center gap-2 text-sm text-black">
               <span className="w-2 h-2 bg-[#50AEA8]" />
-              <h1 className="text-[#6C6C6C] text-[14px] font-[400]">
+              <h1 className="text-[#6C6C6C] text-[14px] font-[400] sansfont">
                 This Month
               </h1>
             </div>
@@ -101,7 +101,7 @@ export default function AdministratorLineChart() {
               />
             </LineChart>
           </ChartContainer>
-          <div className="text-[14px] font-[400] text-[#6C6C6C] ml-267 flex flex-row">
+          <div className="text-[14px] font-[400] text-[#6C6C6C] ml-271 flex flex-row">
             <h1>This month</h1>
           </div>
         </CardContent>

@@ -17,7 +17,7 @@ export default function AdminSupport() {
         <h1 className="text-[14px] font-[500] mt-6">
           Have a question? Running into an issue? We’ve got your back.
         </h1>
-        <h1 className="text-[14px] font-[500] ">
+        <h1 className="text-[14px] font-[500]">
           Submit a request below. Our support team typically responds within 24
           hours.
         </h1>
@@ -41,45 +41,63 @@ export default function AdminSupport() {
         <div
           className="flex items-center space-x-1 w-135 
                  rounded-[12px]
-                focus-within:ring-2 focus-within:ring-gray-300
-                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-60"
+                 focus-within:ring-2 focus-within:ring-gray-300
+                 focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-60"
         >
           <Input
             type="text"
             placeholder="Full Name"
-            className="flex-1 border-none shadow-none focus-visible:ring-0"
+            className="flex-1 text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 text-black !placeholder-black ml-2"
           />
         </div>
         <div
-          className="flex items-center space-x-1 w-135 h-15 
-                 rounded-[12px]
-                focus-within:ring-2 focus-within:ring-gray-300
-                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-73"
+          className="flex flex-col w-135 h-16
+             rounded-[12px]
+             focus-within:ring-2 focus-within:ring-gray-300
+             focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-75 p-2"
         >
+          <label className="flex flex-col">
+            <span className="text-black text-[14px] font-[500] ml-2">
+              Email
+            </span>
+            <span className="text-gray-400 text-[13px] font-[500] mt-1 ml-2">
+              Enter your email address
+            </span>
+          </label>
           <Input
             type="text"
-            placeholder="Email"
-            className="flex flex-col border-none shadow-none focus-visible:ring-0 absolute top-0"
+            className="mt-1 text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 text-black"
           />
         </div>
         <div
-          className="flex items-center space-x-1 w-135 h-55 
-                 rounded-[12px]
-                focus-within:ring-2 focus-within:ring-gray-300
-                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-92"
+          className="flex flex-col w-135 h-55
+             rounded-[12px]
+             focus-within:ring-2 focus-within:ring-gray-300
+             focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-96 p-2"
         >
+          <label className="flex flex-col">
+            <span className="text-black text-[14px] font-[500] ml-2">
+              Describe your inquiry
+            </span>
+            <span className="text-gray-400 text-[13px] font-[500] mt-1 ml-2">
+              Where can we help?
+            </span>
+          </label>
           <Input
             type="text"
-            placeholder="Describe your inquiry"
-            className="flex flex-col border-none shadow-none focus-visible:ring-0 absolute top-0"
+            className="mt-1 text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 text-black"
           />
         </div>
-        <Button className="mt-97 w-135 h-10 mb-20 rounded-[12px] bg-[#074799] text-white cursor-pointer hover:bg-[#074799]">
+        <Button className="mt-101 w-135 h-12 mb-20 rounded-[12px] bg-[#074799] text-white cursor-pointer hover:bg-[#074799] text-[15px] font-[600]">
           Submit
         </Button>
       </div>
       <div>
-        <img src="KindPath Social Media Ads - Users 2.png" alt="" className="w-120 h-155 absolute right-0 top-31" />
+        <img
+          src="KindPath Social Media Ads - Users 2.png"
+          alt=""
+          className="w-120 h-155 absolute right-0 top-31"
+        />
       </div>
     </>
   );

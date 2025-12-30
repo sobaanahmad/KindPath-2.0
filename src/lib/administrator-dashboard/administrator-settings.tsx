@@ -24,9 +24,9 @@ export default function AdminSettings() {
         </div>
         <div className="flex flex-row gap-15">
           <h1 className="font-[400] text-[14px] mt-9">Title</h1>
-          <div className="bg-[#F2F2F7] rounded-lg w-120 h-9 mt-7 flex flex-row items-center gap-81 ml-10.5">
+          <div className="bg-[#F2F2F7] rounded-lg w-120 h-9 mt-7 flex flex-row items-center gap-81 ml-9">
             <h1 className="font-[500] text-[15px] ml-3">Psycologist</h1>
-            <h1 className="font-[600] text-[12px] cursor-pointer text-[#154440] ml-1.5">Update</h1>
+            <h1 className="font-[600] text-[12px] cursor-pointer text-[#154440] ml-2">Update</h1>
           </div>
         </div>
       </div>

@@ -1041,65 +1041,65 @@ const AdministratorTable = () => {
   }, [currentPage]);
 
   return (
-    <div className="w-294 h-220 ml-52 flex flex-col gap-1.5 border border-gray-200 rounded-[8px] mb-10 -mt-15">
+    <div className="w-294 h-235 ml-52 flex flex-col gap-1.5 border border-gray-200 rounded-[8px] mb-15 -mt-15">
       <div className="w-full max-w-6xl flex flex-row gap-2 mb-5 mt-5 ml-2">
         <ButtonGroup>
           <div className="relative w-70">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 size-5" />
             <Input
               placeholder="Search"
-              className="pl-10 pr-15 py-6 rounded-[8px] shadow-none w-full"
+              className="pl-10 pr-15 py-6 rounded-[8px] shadow-none w-full sansfont"
             />
           </div>
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-24 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer"
+            className="rounded-[8px] w-24 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             State
-            <ChevronDown className="mt-0.5" />
+            <ChevronDown />
           </Button>
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-31 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer"
+            className="rounded-[8px] w-31 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             User Type
-            <ChevronDown className="mt-0.5" />
+            <ChevronDown />
           </Button>
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-36 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer"
+            className="rounded-[8px] w-36 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Clinic Name
-            <ChevronDown className="mt-0.5" />
+            <ChevronDown />
           </Button>
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-39 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer"
+            className="rounded-[8px] w-39 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Support Areas
-            <ChevronDown className="mt-0.5" />
+            <ChevronDown />
           </Button>
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-44 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer"
+            className="rounded-[8px] w-44 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Report Timeframe
-            <ChevronDown className="mt-0.5" />
+            <ChevronDown />
           </Button>
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-33 py-6 bg-white border text-white bg-[#162958] hover:bg-[#162958] text-[14px] font-[400] cursor-pointer"
+            className="rounded-[8px] w-33 py-6 bg-white border text-white bg-[#162958] hover:bg-[#162958] text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Export Data
@@ -1110,43 +1110,43 @@ const AdministratorTable = () => {
         <Table>
           <TableHeader className="bg-[#162958] text-white h-13">
             <TableRow>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 User ID
               </TableHead>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 User Type
               </TableHead>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 State
               </TableHead>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 Sign Up Date
               </TableHead>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 Support Areas
               </TableHead>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 Last Active
               </TableHead>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 Association
               </TableHead>
-              <TableHead className="text-white text-[14px] font-[400]">
+              <TableHead className="text-white text-[14px] font-[400] sansfont">
                 Registration Type
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {paginatedInvoices.map((invoice, index) => (
-              <TableRow key={`${invoice.userid}-${index}`} className="relative">
-                <TableCell className="p-5">{invoice.userid}</TableCell>
-                <TableCell>{invoice.usertype}</TableCell>
-                <TableCell>{invoice.state}</TableCell>
-                <TableCell>{invoice.signupdate}</TableCell>
-                <TableCell>{invoice.supportareas}</TableCell>
-                <TableCell>{invoice.lastactive}</TableCell>
-                <TableCell>{invoice.association}</TableCell>
-                <TableCell>{invoice.registrationtype}</TableCell>
+              <TableRow key={`${invoice.userid}-${index}`}>
+                <TableCell className="py-6 sansfont">{invoice.userid}</TableCell>
+                <TableCell className="sansfont">{invoice.usertype}</TableCell>
+                <TableCell className="sansfont">{invoice.state}</TableCell>
+                <TableCell className="sansfont">{invoice.signupdate}</TableCell>
+                <TableCell className="sansfont">{invoice.supportareas}</TableCell>
+                <TableCell className="sansfont">{invoice.lastactive}</TableCell>
+                <TableCell className="sansfont">{invoice.association}</TableCell>
+                <TableCell className="sansfont">{invoice.registrationtype}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -1184,7 +1184,7 @@ const AdministratorTable = () => {
               <PaginationItem key={num}>
                 <Button
                   onClick={() => setCurrentPage(num)}
-                  className={`px-3 w-9 rounded-[4px] text-[16px] cursor-pointer border ${
+                  className={`px-3 w-9 rounded-[4px] text-[16px] cursor-pointer border sansfont ${
                     currentPage === num
                       ? "bg-[#162958] text-white hover:bg-[#162958]"
                       : "bg-white text-black hover:bg-white"
@@ -1194,13 +1194,13 @@ const AdministratorTable = () => {
                 </Button>
               </PaginationItem>
             ))}
-            <span className="px-3 h-9 rounded-[4px] bg-white text-black border flex items-center justify-center">
+            <span className="px-3 h-9 rounded-[4px] bg-white text-black border flex items-center justify-center sansfont">
               ...
             </span>
             <PaginationItem>
               <Button
                 onClick={() => setCurrentPage(totalPages)}
-                className={`px-3 w-9 rounded-[4px] text-[16px] cursor-pointer border ${
+                className={`px-3 w-9 rounded-[4px] text-[16px] cursor-pointer border sansfont ${
                   currentPage === totalPages
                     ? "bg-[#162958] text-white"
                     : "bg-white text-black hover:bg-white"
