@@ -14,14 +14,14 @@ export default function AdminSupport() {
         <h1 className="mt-2 text-[20px] font-[600]">
           Need a hand? We are here to support you.
         </h1>
-        <h1 className="text-[14px] font-[500] mt-3">
+        <h1 className="text-[14px] font-[500] mt-6">
           Have a question? Running into an issue? We’ve got your back.
         </h1>
         <h1 className="text-[14px] font-[500] ">
           Submit a request below. Our support team typically responds within 24
           hours.
         </h1>
-        <h1 className="text-[14px] font-[500] mt-4">Select a request type:</h1>
+        <h1 className="text-[14px] font-[500] mt-7">Select a request type:</h1>
         <div className="mt-4">
           <RadioGroup defaultValue="default">
             <div className="flex items-center gap-3">
@@ -42,7 +42,7 @@ export default function AdminSupport() {
           className="flex items-center space-x-1 w-135 
                  rounded-[12px]
                 focus-within:ring-2 focus-within:ring-gray-300
-                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-55"
+                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-60"
         >
           <Input
             type="text"
@@ -54,7 +54,7 @@ export default function AdminSupport() {
           className="flex items-center space-x-1 w-135 h-15 
                  rounded-[12px]
                 focus-within:ring-2 focus-within:ring-gray-300
-                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-68"
+                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-73"
         >
           <Input
             type="text"
@@ -66,7 +66,7 @@ export default function AdminSupport() {
           className="flex items-center space-x-1 w-135 h-55 
                  rounded-[12px]
                 focus-within:ring-2 focus-within:ring-gray-300
-                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-87"
+                focus-within:border-gray-300 absolute top-5 bg-[#F2F2F7] mt-92"
         >
           <Input
             type="text"
@@ -74,12 +74,12 @@ export default function AdminSupport() {
             className="flex flex-col border-none shadow-none focus-visible:ring-0 absolute top-0"
           />
         </div>
-        <Button className="mt-99 w-135 h-10 mb-20 rounded-[12px] bg-[#074799] text-white cursor-pointer hover:bg-[#074799]">
+        <Button className="mt-97 w-135 h-10 mb-20 rounded-[12px] bg-[#074799] text-white cursor-pointer hover:bg-[#074799]">
           Submit
         </Button>
       </div>
       <div>
-        <img src="KindPath Social Media Ads - Users 2.png" alt="" className="w-125 h-160 absolute right-0 top-31" />
+        <img src="KindPath Social Media Ads - Users 2.png" alt="" className="w-120 h-155 absolute right-0 top-31" />
       </div>
     </>
   );
