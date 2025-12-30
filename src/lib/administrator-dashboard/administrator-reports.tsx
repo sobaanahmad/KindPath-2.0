@@ -161,7 +161,7 @@ export default function AdminReports() {
               </AccordionTrigger>
               <Separator className="bg-gray-400" />
               <AccordionContent className="flex flex-col gap-4 items-center mb-20">
-                <div className="h-103 w-220 border-[1.5px] border-[#D9D9D9] mt-10 rounded-[8px]">
+                <div className="h-98 w-220 border-[1.5px] border-[#D9D9D9] mt-10 rounded-[8px]">
                   <h1 className="text-[26px] font-[600] ml-5 mt-3">
                     Select Date Range
                   </h1>
@@ -178,15 +178,15 @@ export default function AdminReports() {
                       selected={dateRange}
                       onSelect={setDateRange}
                       numberOfMonths={1}
-                      className="rounded-[5px] border-[1.5px] border-gray-300"
+                      className="rounded-[5px] border-[1.5px] border-gray-300 bg-[#FBFBFB]"
                     />
                   </div>
-                  <Button className="ml-195 mt-10 h-8 w-20 text-[14px] font-[400] rounded-[8px] cursor-pointer">
+                  <Button className="ml-195 mt-6 h-8 w-20 text-[14px] font-[400] rounded-[8px] cursor-pointer">
                     Generate
                   </Button>
                 </div>
 
-                <div className="text-[#338B32B2] text-[14px] font-[500] ml-128 -mt-2 italic">
+                <div className="text-[#338B32B2] text-[14px] font-[500] ml-140 -mt-2 italic">
                   KP - 12258 - PSS.pdf has successfully downloaded
                 </div>
               </AccordionContent>

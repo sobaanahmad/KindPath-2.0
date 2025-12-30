@@ -22,18 +22,20 @@ export default function AdministratorSidebar() {
   return (
     <SidebarProvider>
       <Sidebar
-        style={{
-          "--sidebar-width": "12rem",
-          "--sidebar-width-icon": "4rem",
-        } as React.CSSProperties}
+        style={
+          {
+            "--sidebar-width": "12rem",
+            "--sidebar-width-icon": "4rem",
+          } as React.CSSProperties
+        }
       >
         <SidebarHeader className="flex flex-col items-center mt-6">
           <div
             className="cursor-pointer"
-            onClick={() => navigate("/admin-dashboard")}
+            onClick={() => navigate("/admin/dashboard")}
           >
             <img
-              src="K-Logo.png"
+              src="/K-Logo.png"
               alt="K Logo"
               className="h-22 w-22 object-contain"
             />
@@ -41,33 +43,41 @@ export default function AdministratorSidebar() {
         </SidebarHeader>
         <SidebarContent className="space-y-2 mt-7">
           <SidebarGroup
-            onClick={() => navigate("/admin-reports")}
-            className={`flex flex-row gap-2 pl-3 text-[16px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin-reports") ? "bg-[#E1FFBB] text-black font-[700]" : ""
+            onClick={() => navigate("/admin/reports")}
+            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
+              isActive("/admin/reports")
+                ? "bg-[#E1FFBB] text-black font-[700]"
+                : ""
             }`}
           >
-            <FileChartColumnIncreasing className="size-4 mt-0.5" /> Reports
+            <FileChartColumnIncreasing className="size-4 mt-1" /> Reports
           </SidebarGroup>
           <SidebarGroup
-            onClick={() => navigate("/admin-dashboard")}
-            className={`flex flex-row gap-2 pl-3 text-[16px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin-dashboard") ? "bg-[#E1FFBB] text-black font-[700]" : ""
+            onClick={() => navigate("/admin/dashboard")}
+            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
+              isActive("/admin/dashboard")
+                ? "bg-[#E1FFBB] text-black font-[700]"
+                : ""
             }`}
           >
-            <ChartPie className="size-4 mt-0.5" /> Admin Dashboard
+            <ChartPie className="size-4 mt-1" /> Admin Dashboard
           </SidebarGroup>
           <SidebarGroup
-            onClick={() => navigate("/admin-settings")}
-            className={`flex flex-row gap-2 pl-3 text-[16px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin-settings") ? "bg-[#E1FFBB] text-black font-[700]" : ""
+            onClick={() => navigate("/admin/settings")}
+            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
+              isActive("/admin/settings")
+                ? "bg-[#E1FFBB] text-black font-[700]"
+                : ""
             }`}
           >
-            <SettingsIcon className="size-4 mt-0.5" /> Settings
+            <SettingsIcon className="size-4 mt-1" /> Settings
           </SidebarGroup>
           <SidebarGroup
-            onClick={() => navigate("/admin-support")}
-            className={`flex flex-row gap-2 pl-3 text-[16px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin-support") ? "bg-[#E1FFBB] text-black font-[700]" : ""
+            onClick={() => navigate("/admin/support")}
+            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
+              isActive("/admin/support")
+                ? "bg-[#E1FFBB] text-black font-[700]"
+                : ""
             }`}
           >
             <CircleQuestionMark className="size-4 mt-0.5" /> Support

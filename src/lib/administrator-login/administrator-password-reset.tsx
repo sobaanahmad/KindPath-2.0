@@ -36,13 +36,13 @@ export default function AdminPasswordReset() {
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const onSubmit = (values: LoginFormValues) => {
     console.log("Form submitted:", values);
-    navigate("/admin-login"); 
+    navigate("/admin/login"); 
   };
   return (
     <div className="min-h-screen bg-[#031C3D] relative pb-[360px]">
       <div className="flex flex-col items-center relative z-10">
         <img
-          src="KP Logo - White .png"
+          src="/KP Logo - White .png"
           alt="KP Logo"
           className="h-48 w-100 ml-5"
         />
@@ -126,7 +126,7 @@ export default function AdminPasswordReset() {
       </div>
       <div className="absolute left-0 top-[50vh] z-0">
         <img
-          src="KindPath Social Media Ads - Users.png"
+          src="/KindPath Social Media Ads - Users.png"
           alt="KP Social Media Ads - Users"
           className="h-140 w-106"
         />

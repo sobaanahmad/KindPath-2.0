@@ -30,14 +30,14 @@ export default function AdministratorLogin() {
 
   const onSubmit = (values: LoginFormValues) => {
     console.log("Form submitted:", values);
-    navigate("/admin-dashboard");
+    navigate("/admin/dashboard");
   };
 
   return (
     <div className="min-h-screen bg-[#031C3D] relative pb-[360px]">
       <div className="flex flex-col items-center relative z-10">
         <img
-          src="KP Logo - White .png"
+          src="/KP Logo - White .png"
           alt="KP Logo"
           className="h-48 w-100 ml-5"
         />
@@ -112,7 +112,7 @@ export default function AdministratorLogin() {
                   )}
                 />
                 <Link
-                  to="/admin-forgot-password"
+                  to="/admin/forgot-password"
                   className="inline-block -mt-3 mb-2 hover:text-[#074799] text-[14px] font-[600] text-[#8E8E93]"
                 >
                   Forgot Password?
@@ -130,7 +130,7 @@ export default function AdministratorLogin() {
       </div>
       <div className="absolute left-0 top-[50vh] z-0">
         <img
-          src="KindPath Social Media Ads - Users.png"
+          src="/KindPath Social Media Ads - Users.png"
           alt="KP Social Media Ads - Users"
           className="h-140 w-106"
         />

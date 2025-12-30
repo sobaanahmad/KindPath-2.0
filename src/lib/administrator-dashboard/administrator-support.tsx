@@ -84,7 +84,7 @@ export default function AdminSupport() {
 
       <div>
         <img
-          src="KindPath Social Media Ads - Users 2.png"
+          src="/KindPath Social Media Ads - Users 2.png"
           alt=""
           className="w-120 h-155 absolute right-0 top-31"
         />
