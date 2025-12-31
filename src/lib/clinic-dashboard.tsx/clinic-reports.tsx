@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import AdministratorSidebar from "./administrator-sidebar";
 import { Droplet, PersonStanding, UserRound } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import * as React from "react";
@@ -12,17 +11,18 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import AdminReportsHeader from "./administrator-reports-header";
+import ClinicReportsHeader from "./clinic-reports-header";
+import ClinicSidebar from "./clinic-sidebar";
 
-export default function AdminReports() {
+export default function ClinicReports() {
   const [dateRange, setDateRange] = React.useState<DateRange | undefined>({
     from: new Date(2025, 5, 12),
     to: new Date(2025, 6, 15),
   });
   return (
     <>
-      <AdminReportsHeader />
-      <AdministratorSidebar />
+      <ClinicReportsHeader />
+      <ClinicSidebar />
       <div className="absolute top-0 ml-52 mt-28">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-[1150px]">
           <Card className="shadow-none h-[80px] rounded-[12px] relative border-none bg-[#F3F5FF]">
@@ -64,7 +64,7 @@ export default function AdminReports() {
                 Monthly Summaries
               </AccordionTrigger>
               <Separator className="my-1 bg-gray-400 mb-2" />
-              <AccordionContent className="flex flex-wrap gap-21 items-center">
+              <AccordionContent className="flex flex-wrap gap-21 items-center mt-5 mb-5">
                 <div className="flex flex-col items-center text-center w-[90px]">
                   <img
                     src="/description.png"

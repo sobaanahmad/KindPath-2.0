@@ -9,13 +9,13 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import AdministratorSidebar from "./administrator-sidebar";
-import AdminSettingsHeader from "./administrator-settings-header";
+import ClinicSettingsHeader from "./clinic-settings-header";
+import ClinicSidebar from "./clinic-sidebar";
 
-export default function AdminSettings() {
+export default function ClinicSettings() {
   const [firstName, setFirstName] = useState("Jack");
   const [lastName, setLastName] = useState("Lorrund");
-  const [title, setTitle] = useState("Psycologist");
+  const [title, setTitle] = useState("Psychologist");
   const [editingField, setEditingField] = useState<
     "First Name" | "Last Name" | "Title" | null
   >(null);
@@ -38,8 +38,8 @@ export default function AdminSettings() {
 
   return (
     <>
-      <AdminSettingsHeader />
-      <AdministratorSidebar />
+      <ClinicSettingsHeader />
+      <ClinicSidebar />
       <div className="h-70 w-170 ml-52 absolute top-25">
         <h1 className="font-[600] text-[20px] mt-4 ml-4">Profile</h1>
         <div className="flex flex-row gap-15">
@@ -61,6 +61,18 @@ export default function AdminSettings() {
             <h1
               className="font-[600] text-[12px] cursor-pointer text-[#154440]"
               onClick={() => openDialog("Last Name", lastName)}
+            >
+              Update
+            </h1>
+          </div>
+        </div>
+        <div className="flex flex-row gap-15">
+          <h1 className="font-[400] text-[14px] mt-9 ml-4">Title</h1>
+          <div className="bg-[#F2F2F7] rounded-lg w-120 h-9 mt-7 flex items-center justify-between px-3 ml-9">
+            <h1 className="font-[500] text-[15px]">{title}</h1>
+            <h1
+              className="font-[600] text-[12px] cursor-pointer text-[#154440]"
+              onClick={() => openDialog("Title", title)}
             >
               Update
             </h1>
