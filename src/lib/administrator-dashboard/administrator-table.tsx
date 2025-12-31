@@ -1041,7 +1041,7 @@ const AdministratorTable = () => {
   }, [currentPage]);
 
   return (
-    <div className="w-294 h-235 ml-52 flex flex-col gap-1.5 border border-gray-200 rounded-[8px] mb-15 -mt-15">
+    <div className="h-235 ml-52 flex flex-col gap-1.5 border border-gray-200 rounded-[8px] mb-15 -mt-15 mr-5">
       <div className="w-full max-w-6xl flex flex-row gap-2 mb-5 mt-5 ml-2">
         <ButtonGroup>
           <div className="relative w-70">

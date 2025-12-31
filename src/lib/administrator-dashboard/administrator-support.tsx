@@ -63,7 +63,6 @@ export default function AdminSupport() {
             className="flex flex-col text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 absolute top-0 text-black !placeholder-black"
           />
         </div>
-
         <div
           className="flex items-center space-x-1 w-135 h-55 
                  rounded-[12px]
@@ -76,12 +75,10 @@ export default function AdminSupport() {
             className="flex flex-col text-[14px] font-[500] border-none shadow-none focus-visible:ring-0 absolute top-0 text-black !placeholder-black"
           />
         </div>
-
         <Button className="mt-101 w-135 h-12 mb-20 rounded-[12px] bg-[#074799] text-white cursor-pointer hover:bg-[#074799] text-[15px] font-[600]">
           Submit
         </Button>
       </div>
-
       <div>
         <img
           src="/KindPath Social Media Ads - Users 2.png"

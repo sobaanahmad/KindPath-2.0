@@ -19,12 +19,12 @@ export default function AdministratorCards() {
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button className="cursor-pointer rounded-[8px] w-26 py-6 bg-white hover:bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont">
+          <Button variant="secondary" className="cursor-pointer rounded-[8px] w-26 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont">
             This Year
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button className="cursor-pointer rounded-[8px] w-37 py-6 bg-white hover:bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont">
+          <Button variant="secondary" className="cursor-pointer rounded-[8px] w-37 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont">
             Custom Date
             <ChevronDown className="cursor-pointer size-4" />
           </Button>

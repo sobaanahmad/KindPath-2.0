@@ -24,7 +24,7 @@ export default function AdministratorSidebar() {
       <Sidebar
         style={
           {
-            "--sidebar-width": "12rem",
+            "--sidebar-width": "12.2rem",
             "--sidebar-width-icon": "4rem",
           } as React.CSSProperties
         }

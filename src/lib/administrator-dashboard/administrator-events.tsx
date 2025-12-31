@@ -9,7 +9,7 @@ import {
 export default function AdministratorEvents() {
   return (
     <>
-      <div className="w-120 h-160 ml-53 relative">
+      <div className="w-120 h-145 ml-53 relative mb-16">
         <h1 className="font-[700] text-[16px] mt-3 ml-4 sansfont">Events</h1>
         <div className="flex flex-row">
           <div className="w-60 h-140 ml-4 mt-4">

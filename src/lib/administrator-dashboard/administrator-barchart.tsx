@@ -1,5 +1,3 @@
-"use client";
-
 import { CircleQuestionMark } from "lucide-react";
 import {
   Bar,

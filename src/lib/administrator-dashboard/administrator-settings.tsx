@@ -9,7 +9,6 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-
 import AdministratorSidebar from "./administrator-sidebar";
 import AdminSettingsHeader from "./administrator-settings-header";
 
