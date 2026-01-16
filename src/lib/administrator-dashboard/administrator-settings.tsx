@@ -41,7 +41,7 @@ export default function AdminSettings() {
       <AdministratorSidebar />
       <main className="flex-1 flex flex-col">
         <AdminSettingsHeader />
-        <div className="flex-1 p-7 overflow-auto">
+        <div className="flex-1 p-8 overflow-auto">
           <h1 className="font-[600] text-[20px] mb-6">Profile</h1>
           <div className="space-y-7 max-w-2xl">
             <div className="flex flex-row items-center gap-8">

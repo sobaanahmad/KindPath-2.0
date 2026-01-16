@@ -12,7 +12,7 @@ export default function AdministratorEvents() {
       <div className="flex-1 min-w-[400px] relative">
         <h1 className="font-[700] text-[16px] mt-3 ml-4 sansfont">Events</h1>
         <div className="flex flex-row">
-          <div className="w-70 h-170 ml-4 mt-4 md:w-120 lg:w-70">
+          <div className="w-70 ml-4 mt-4 md:w-120 lg:w-70">
             <h1 className="text-[14px] font-[500] mb-4 sansfont">Event Type</h1>
             <div className="flex flex-row gap-2 space-y-5">
               <div className="w-4 h-4 bg-[#50AEA8] mt-0.5" />
@@ -113,7 +113,7 @@ export default function AdministratorEvents() {
               </Accordion>
             </div>
           </div>
-          <div className="w-15 h-140 mt-4 md:w-30 md:mr-20 lg:w-1">
+          <div className="w-15 mt-4 md:w-30 md:mr-20 lg:w-1">
             <h1 className="font-[500] text-[14px] ml-6 sansfont">Value</h1>
             <div className="flex flex-row">
               <div className="flex flex-col gap-2 space-y-2 mt-3">
@@ -134,7 +134,7 @@ export default function AdministratorEvents() {
               </div>
             </div>
           </div>
-          <div className="w-42 h-140 mt-4 ml-1 md:w-40">
+          <div className="w-42fv mt-4 ml-1 md:w-40">
             <h1 className="font-[500] text-[14px] ml-3 sansfont">Rate</h1>
             <div className="flex flex-row">
               <div className="flex flex-col gap-2 space-y-2 mt-3">

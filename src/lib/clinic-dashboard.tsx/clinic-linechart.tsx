@@ -90,7 +90,6 @@ export default function ClinicLineChart() {
                 tickFormatter={(v) =>
                   ["Low", "Moderate", "Elevated", "High", "Crisis"][v - 1]
                 }
-                className="hidden sm:block"
               >
                 <Label
                   value="Risk"
@@ -100,7 +99,6 @@ export default function ClinicLineChart() {
                   fill="#6C6C6C"
                   fontSize={14}
                   fontWeight={400}
-                  className="hidden md:block"
                 />
               </YAxis>
               <ChartTooltip content={<ChartTooltipContent />} />

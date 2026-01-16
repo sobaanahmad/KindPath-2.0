@@ -1,8 +1,8 @@
 export default function AdminSupportHeader() {
   return (
-    <div className="bg-[#F3F5FF] h-20 w-full flex items-center justify-between lg:px-6 sm:px-12">
-      <h1 className="text-[28px] font-[600]">Support</h1>
-      <div className="flex items-center gap-3">
+    <div className="bg-[#F3F5FF] h-20 w-full flex items-center justify-between lg:px-1 sm:px-1">
+      <h1 className="text-[28px] font-[600] ml-9">Support</h1>
+      <div className="flex items-center gap-3 mr-2">
         <div className="w-10 h-10">
           <img
             src="/Ellipse 68.png"
