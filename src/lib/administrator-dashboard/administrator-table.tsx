@@ -1054,7 +1054,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-full sm:w-23 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-21 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             State
@@ -1063,7 +1063,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-full sm:w-30 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-28 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             User Type
@@ -1072,16 +1072,16 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-full sm:w-35 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-33 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Clinic Name
             <ChevronDown />
           </Button>
         </ButtonGroup>
-         <ButtonGroup>
+        <ButtonGroup>
           <Button
-            className="rounded-[8px] w-39 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-37 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Support Areas
@@ -1090,7 +1090,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-full sm:w-44 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-40 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Report Timeframe

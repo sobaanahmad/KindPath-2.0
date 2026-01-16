@@ -90,7 +90,6 @@ export default function AdministratorLineChart() {
                 tickFormatter={(v) =>
                   ["Low", "Moderate", "Elevated", "High", "Crisis"][v - 1]
                 }
-                className="hidden sm:block"
               >
                 <Label
                   value="Risk"
@@ -101,7 +100,6 @@ export default function AdministratorLineChart() {
                   fontSize={14}
                   fontWeight={400}
                   color="#6C6C6C"
-                  className="hidden md:block"
                 />
               </YAxis>
               <ChartTooltip content={<ChartTooltipContent />} />
