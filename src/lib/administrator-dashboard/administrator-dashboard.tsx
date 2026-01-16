@@ -15,13 +15,15 @@ export default function AdministratorDashboard() {
         <div className="flex-1 p-4 sm:p-6 space-y-3 overflow-auto">
           <AdministratorCards />
           <AdministratorLineChart />
-          <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 mt-8 lg:mt-15">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 mt-8 lg:mt-15 md:items-center">
             <AdministratorEvents />
-            <div className=" mr-30">
+            <div className="mr-10 lg:-mt-85">
               <AdministratorBarchart />
             </div>
           </div>
+          <div className="">
           <AdministratorTable />
+          </div>
         </div>
       </main>
     </div>

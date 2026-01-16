@@ -35,7 +35,9 @@ export default function AdminReports() {
               </div>
               <Separator className="!w-[175px] border-t-[1.5px] border-gray-300 mt-5 mx-auto" />
               <div className="absolute top-12 left-1/2 -translate-x-1/2">
-                <h1 className="text-[16px] font-[600]">Ruth Langmore</h1>
+                <h1 className="text-[16px] font-[600] md:text-[15px]">
+                  Ruth Langmore
+                </h1>
               </div>
             </Card>
             <Card className="shadow-none h-[80px] rounded-[12px] relative border-none bg-[#FFF6F3]">

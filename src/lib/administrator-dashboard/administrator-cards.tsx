@@ -42,7 +42,7 @@ export default function AdministratorCards() {
           </Button>
         </ButtonGroup>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 gap-3 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 gap-3 w-full">
         <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
           <CardHeader className="p-1">
             <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
@@ -113,13 +113,13 @@ export default function AdministratorCards() {
         </Card>
         <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
           <CardHeader className="p-1">
-            <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
+            <CardTitle className=" text-[14px] md:text-[14px] lg:text-[12.5px] font-[500] sansfont lg:ml-2 ml-4 -mt-2">
               Connect Subscription Revenue
             </CardTitle>
-            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
+            <CardDescription className="text-[40px] font-[500] text-black sansfont lg:ml-2 ml-4 -mt-2">
               $4,289
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] text-[#D22E25] sansfont ml-4 -mt-2">
+            <CardDescription className="text-[14px] font-[400] text-[#D22E25] sansfont lg:ml-2 ml-4 -mt-2">
               <div className="flex gap-1">
                 <ArrowDown className="size-3 mt-1" />
                 18% from last month

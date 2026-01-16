@@ -11,7 +11,7 @@ export default function ClinicSupport() {
       <ClinicSidebar />
       <main className="flex-1 flex flex-col">
         <ClinicSupportHeader />
-        <div className="flex-1 p-12 overflow-auto flex">
+        <div className="flex-1 p-12 overflow-auto flex md:justify-center lg:justify-start">
           <div className="flex-1 max-w-xl space-y-6">
             <h1 className="text-[20px] font-[600]">
               Need a hand? We are here to support you.

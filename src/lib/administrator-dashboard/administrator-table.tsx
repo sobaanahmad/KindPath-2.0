@@ -1042,9 +1042,9 @@ const AdministratorTable = () => {
 
   return (
     <div className="w-full flex flex-col gap-1.5 border border-gray-200 rounded-[8px] pb-6">
-      <div className="w-full flex flex-row flex-wrap gap-2 p-4 mt-2">
+      <div className="w-full flex flex-col lg:flex-row flex-wrap gap-2 p-4 mt-2">
         <ButtonGroup>
-          <div className="relative w-65">
+          <div className="relative w-full sm:w-65">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 size-5" />
             <Input
               placeholder="Search"
@@ -1054,7 +1054,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-23 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-full sm:w-23 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             State
@@ -1063,7 +1063,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-30 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-full sm:w-30 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             User Type
@@ -1072,14 +1072,14 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-35 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-full sm:w-35 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Clinic Name
             <ChevronDown />
           </Button>
         </ButtonGroup>
-        <ButtonGroup>
+         <ButtonGroup>
           <Button
             className="rounded-[8px] w-39 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
@@ -1090,24 +1090,24 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-44 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-full sm:w-44 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Report Timeframe
             <ChevronDown />
           </Button>
         </ButtonGroup>
-        <ButtonGroup>
+        <ButtonGroup className="lg:ml-auto">
           <Button
-            className="rounded-[8px] w-33 py-6 bg-white border text-white bg-[#162958] hover:bg-[#162958] text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-full sm:w-33 py-6 bg-[#162958] hover:bg-[#162958] text-white text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Export Data
           </Button>
         </ButtonGroup>
       </div>
-      <div className="mt-2 pl-4 py-2 pr-0">
-        <Table>
+      <div className="hidden sm:block mt-2 px-4 py-2 overflow-x-auto">
+        <Table className="min-w-[900px]">
           <TableHeader className="[&_tr>th]:bg-[#162958] [&_tr>th]:hover:bg-[#162958] text-white h-13">
             <TableRow>
               <TableHead className="text-white text-[14px] font-[400] sansfont">
@@ -1159,6 +1159,30 @@ const AdministratorTable = () => {
             ))}
           </TableBody>
         </Table>
+      </div>
+      <div className="sm:hidden flex flex-col gap-3 px-4">
+        {paginatedInvoices.map((invoice, index) => (
+          <div
+            key={`${invoice.userid}-${index}`}
+            className="border border-gray-200 rounded-[8px] p-4 flex flex-col gap-2 text-sm sansfont"
+          >
+            {[
+              ["User ID", invoice.userid],
+              ["User Type", invoice.usertype],
+              ["State", invoice.state],
+              ["Sign Up Date", invoice.signupdate],
+              ["Support Areas", invoice.supportareas],
+              ["Last Active", invoice.lastactive],
+              ["Association", invoice.association],
+              ["Registration Type", invoice.registrationtype],
+            ].map(([label, value]) => (
+              <div key={label} className="flex justify-between gap-4">
+                <span className="text-gray-500">{label}</span>
+                <span className="text-right">{value}</span>
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
       <div className="flex justify-center mt-4">
         <Pagination>
@@ -1232,6 +1256,7 @@ const AdministratorTable = () => {
                 />
               </PaginationNext>
             </PaginationItem>
+
             <PaginationItem>
               <Button
                 onClick={() => setCurrentPage(totalPages)}

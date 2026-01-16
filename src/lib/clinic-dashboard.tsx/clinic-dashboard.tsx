@@ -15,9 +15,9 @@ export default function ClinicDashboard() {
         <div className="flex-1 p-4 sm:p-6 space-y-3 overflow-auto">
           <ClinicCards />
           <ClinicLineChart />
-          <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 mt-8 lg:mt-15">
+          <div className="flex flex-col items-center lg:flex-row gap-4 lg:gap-0 mt-8 lg:mt-15">
             <ClinicEvents />
-            <div className=" mr-30">
+            <div className="mr-5 lg:-mt-84">
               <ClinicBarchart />
             </div>
           </div>

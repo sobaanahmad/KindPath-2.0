@@ -96,7 +96,7 @@ export default function ClinicLineChart() {
                   value="Risk"
                   angle={-90}
                   position="left"
-                  offset={12}
+                  offset={7}
                   fill="#6C6C6C"
                   fontSize={14}
                   fontWeight={400}

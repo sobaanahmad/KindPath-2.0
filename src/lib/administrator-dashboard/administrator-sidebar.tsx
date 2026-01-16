@@ -76,7 +76,7 @@ export default function AdministratorSidebar() {
   return (
     <>
       <button
-        className="lg:hidden fixed top-0.5 left-0.5 z-50 p-1 rounded-sm cursor-pointer"
+        className="lg:hidden fixed top-6 left-1 z-50 p-1 rounded-sm cursor-pointer"
         onClick={() => setOpen(true)}
       >
         <Menu className="w-5 h-5" />

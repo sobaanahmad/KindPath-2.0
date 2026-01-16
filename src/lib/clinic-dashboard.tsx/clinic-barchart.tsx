@@ -26,7 +26,7 @@ const chartData = [
 
 export default function ClinicBarchart() {
   return (
-    <div className="flex-1 min-w-[200px] p-4">
+    <div className="flex-1 min-w-[200px] p-4 md:w-[840px] lg:w-[600px]">
       <div className="flex items-center gap-2">
         <h1 className="text-[16px] font-[700] sansfont">
           Risk Levels by Severity

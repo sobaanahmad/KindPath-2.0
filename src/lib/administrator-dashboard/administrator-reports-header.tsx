@@ -3,8 +3,8 @@ import { SearchIcon } from "lucide-react";
 
 export default function AdminReportsHeader() {
   return (
-    <header className="bg-[#F3F5FF] h-20 w-full px-4 sm:px-6 grid grid-cols-3 items-center">
-      <h1 className="text-[22px] sm:text-[28px] font-[600] truncate">
+    <header className="bg-[#F3F5FF] h-20 w-full lg:px-4 sm:px-8 grid grid-cols-3 items-center">
+      <h1 className="lg:text-[28px] sm:text-[18px] font-[600] truncate">
         Ruth Langmore
       </h1>
       <div className="flex justify-center">
