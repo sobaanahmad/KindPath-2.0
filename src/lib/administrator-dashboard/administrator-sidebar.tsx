@@ -1,90 +1,110 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import {
-  Sidebar,
-  SidebarContent,
-  SidebarFooter,
-  SidebarGroup,
-  SidebarHeader,
-  SidebarProvider,
-} from "@/components/ui/sidebar";
-import {
   ChartPie,
   CircleQuestionMark,
-  FileChartColumnIncreasing,
   SettingsIcon,
+  Menu,
+  X,
+  FileText,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function AdministratorSidebar() {
   const navigate = useNavigate();
   const location = useLocation();
   const isActive = (path: string) => location.pathname === path;
+  const [open, setOpen] = useState(false);
 
-  return (
-    <SidebarProvider>
-      <Sidebar
-        style={
+  const SidebarContent = () => (
+    <>
+      <div className="flex flex-col items-center mt-6">
+        <div
+          className="cursor-pointer"
+          onClick={() => {
+            navigate("/admin/dashboard");
+            setOpen(false);
+          }}
+        >
+          <img
+            src="/K-Logo.png"
+            alt="K Logo"
+            className="h-22 w-22 object-contain"
+          />
+        </div>
+      </div>
+      <div className="space-y-6 mt-7 flex-1">
+        {[
           {
-            "--sidebar-width": "12.2rem",
-            "--sidebar-width-icon": "4rem",
-          } as React.CSSProperties
-        }
-      >
-        <SidebarHeader className="flex flex-col items-center mt-6">
+            label: "Reports",
+            path: "/admin/reports",
+            icon: FileText,
+          },
+          {
+            label: "Admin Dashboard",
+            path: "/admin/dashboard",
+            icon: ChartPie,
+          },
+          {
+            label: "Settings",
+            path: "/admin/settings",
+            icon: SettingsIcon,
+          },
+          {
+            label: "Support",
+            path: "/admin/support",
+            icon: CircleQuestionMark,
+          },
+        ].map(({ label, path, icon: Icon }) => (
           <div
-            className="cursor-pointer"
-            onClick={() => navigate("/admin/dashboard")}
+            key={path}
+            onClick={() => {
+              navigate(path);
+              setOpen(false);
+            }}
+            className={`flex gap-2 p-2 pl-4 text-[16px] font-[500] cursor-pointer
+              hover:bg-[#E1FFBB] hover:text-black
+              ${isActive(path) ? "bg-[#E1FFBB] text-black font-[700]" : ""}
+            `}
           >
-            <img
-              src="/K-Logo.png"
-              alt="K Logo"
-              className="h-22 w-22 object-contain"
-            />
+            <Icon className="size-4 mt-0.5" />
+            {label}
           </div>
-        </SidebarHeader>
-        <SidebarContent className="space-y-2 mt-7">
-          <SidebarGroup
-            onClick={() => navigate("/admin/reports")}
-            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin/reports")
-                ? "bg-[#E1FFBB] text-black font-[700]"
-                : ""
-            }`}
-          >
-            <FileChartColumnIncreasing className="size-4 mt-1" /> Reports
-          </SidebarGroup>
-          <SidebarGroup
-            onClick={() => navigate("/admin/dashboard")}
-            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin/dashboard")
-                ? "bg-[#E1FFBB] text-black font-[700]"
-                : ""
-            }`}
-          >
-            <ChartPie className="size-4 mt-1" /> Admin Dashboard
-          </SidebarGroup>
-          <SidebarGroup
-            onClick={() => navigate("/admin/settings")}
-            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin/settings")
-                ? "bg-[#E1FFBB] text-black font-[700]"
-                : ""
-            }`}
-          >
-            <SettingsIcon className="size-4 mt-1" /> Settings
-          </SidebarGroup>
-          <SidebarGroup
-            onClick={() => navigate("/admin/support")}
-            className={`flex flex-row gap-2 pl-3 text-[15px] font-[500] text-left cursor-pointer hover:bg-[#E1FFBB] hover:text-black ${
-              isActive("/admin/support")
-                ? "bg-[#E1FFBB] text-black font-[700]"
-                : ""
-            }`}
-          >
-            <CircleQuestionMark className="size-4 mt-0.5" /> Support
-          </SidebarGroup>
-        </SidebarContent>
-        <SidebarFooter />
-      </Sidebar>
-    </SidebarProvider>
+        ))}
+      </div>
+    </>
+  );
+  return (
+    <>
+      <button
+        className="lg:hidden fixed top-0.5 left-0.5 z-50 p-1 rounded-sm cursor-pointer"
+        onClick={() => setOpen(true)}
+      >
+        <Menu className="w-5 h-5" />
+      </button>
+      {open && (
+        <div
+          className="fixed inset-0 bg-black/40 z-40 lg:hidden"
+          onClick={() => setOpen(false)}
+        />
+      )}
+      <aside
+        className={`fixed top-0 left-0 z-50 h-screen w-[12.5rem] bg-sidebar 
+    flex flex-col overflow-y-auto overscroll-contain
+    transform transition-transform duration-300 lg:hidden
+    ${open ? "translate-x-0" : "-translate-x-full"}
+  `}
+      >
+        <button
+          className="absolute top-4 right-4 cursor-pointer"
+          onClick={() => setOpen(false)}
+        >
+          <X className="w-4 h-4" />
+        </button>
+        <SidebarContent />
+      </aside>
+      <aside className="hidden lg:flex w-[12.5rem] min-h-screen bg-sidebar flex-col shrink-0">
+        <SidebarContent />
+      </aside>
+    </>
   );
 }

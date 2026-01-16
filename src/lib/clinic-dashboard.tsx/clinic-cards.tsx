@@ -1,30 +1,28 @@
 import { Button } from "@/components/ui/button";
-import {
-  ArrowUp,
-  ChevronDown,
-} from "lucide-react";
+import { ArrowUp, ChevronDown, CircleQuestionMark } from "lucide-react";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { Card, CardAction } from "@/components/ui/card";
 import { CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ClinicCards() {
   return (
-    <>
-      <div className="flex flex-row gap-2 absolute top-30">
-        <ButtonGroup className="ml-52">
-          <Button className="cursor-pointer rounded-[8px] w-15 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
+    <div className="space-y-4">
+      <div className="flex flex-wrap items-center gap-2 lg:flex-nowrap">
+        <ButtonGroup>
+          <Button className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-15 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
             All
           </Button>
         </ButtonGroup>
-        <ButtonGroup className="ml-147">
-          <Button className="cursor-pointer rounded-[8px] w-25 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
+        <div className="hidden xl:flex flex-1" />
+        <ButtonGroup>
+          <Button className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-25 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
             This Month
           </Button>
         </ButtonGroup>
         <ButtonGroup>
           <Button
             variant="secondary"
-            className="cursor-pointer rounded-[8px] w-26 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont"
+            className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-26 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont"
           >
             This Year
           </Button>
@@ -32,32 +30,32 @@ export default function ClinicCards() {
         <ButtonGroup>
           <Button
             variant="secondary"
-            className="cursor-pointer rounded-[8px] w-37 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont"
+            className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-37 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont flex items-center gap-2"
           >
             Custom Date
-            <ChevronDown className="cursor-pointer size-4" />
+            <ChevronDown className="size-4" />
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button className="cursor-pointer rounded-[8px] w-35 py-6 bg-[#162958] hover:bg-[#162958] text-white text-[14px] font-[400] sansfont">
+          <Button className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-35 py-6 bg-[#162958] hover:bg-[#162958] text-white text-[14px] font-[400] sansfont">
             Download Data
           </Button>
         </ButtonGroup>
       </div>
-      <div className="flex flex-row gap-3 w-full absolute top-49">
-        <Card className="w-[250px] h-[135px] rounded-[8px] relative ml-58 border border-gray-200 shadow-none">
-          <CardHeader>
-              <CardTitle className="text-[14px] font-[500] absolute top-4 left-5 sansfont">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 gap-3 w-full ml-6">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <div className="flex flex-row gap-18">
+              <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
                 Total Providers
               </CardTitle>
-              <div className="absolute top-4.5 right-7">
-                <img src="/qmark.png" alt="?" className="h-4 w-4" />
-              </div>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-5 text-black sansfont">
+              <CircleQuestionMark className="size-5 fill-black text-white -mt-2" />
+            </div>
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               43
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-5 text-[#25D255] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#25D255] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowUp className="size-3 mt-1" />
                 7% from last month
               </div>
@@ -65,19 +63,19 @@ export default function ClinicCards() {
             <CardAction />
           </CardHeader>
         </Card>
-        <Card className="w-[250px] h-[135px] rounded-[8px] relative border border-gray-200 shadow-none">
-          <CardHeader>
-              <CardTitle className="text-[14px] font-[500] absolute top-4 left-5 sansfont">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <div className="flex flex-row gap-18">
+              <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
                 Total Patients
               </CardTitle>
-              <div className="absolute top-4.5 right-7">
-                <img src="/qmark.png" alt="?" className="h-4 w-4" />
-              </div>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-5 text-black sansfont">
+              <CircleQuestionMark className="size-5 fill-black text-white -mt-2" />
+            </div>
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               43
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-5 text-[#25D255] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#25D255] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowUp className="size-3 mt-1" />
                 7% from last month
               </div>
@@ -86,6 +84,6 @@ export default function ClinicCards() {
           </CardHeader>
         </Card>
       </div>
-    </>
+    </div>
   );
 }

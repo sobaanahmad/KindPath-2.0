@@ -33,13 +33,13 @@ const chartConfig = {
 
 export default function ClinicLineChart() {
   return (
-    <div className="absolute top-85 ml-52 w-299">
-      <Card className="h-75 w-294 shadow-none border-none">
+    <div className="w-full">
+      <Card className="w-full shadow-none border-none">
         <CardHeader>
           <CardTitle className="text-black text-[16px] font-[700] sansfont">
             Risk Trends
           </CardTitle>
-          <div className="flex gap-3 mt-2">
+          <div className="flex flex-wrap gap-3 mt-2">
             <div className="flex items-center gap-2 text-sm text-black">
               <span className="w-2 h-2 bg-[#E3C5A7]" />
               <h1 className="text-[#6C6C6C] text-[14px] font-[400] sansfont">
@@ -54,24 +54,43 @@ export default function ClinicLineChart() {
             </div>
           </div>
         </CardHeader>
-        <CardContent className="h-[185px] w-[1196px]">
+        <CardContent className="h-[180px] sm:h-[220px] md:h-[260px] w-full">
           <ChartContainer
             config={chartConfig}
             className="h-full w-full [&_.recharts-text]:fill-black"
           >
-            <LineChart data={chartData} width={1100} height={260} margin={{  left: 18 }}>
+            <LineChart
+              data={chartData}
+              margin={{ top: 8, right: 12, left: 12, bottom: 8 }}
+            >
               <CartesianGrid vertical={false} />
-              <XAxis dataKey="date" tickLine={false} axisLine={false} />
+              <XAxis
+                dataKey="date"
+                tickLine={false}
+                axisLine={false}
+                interval="preserveStartEnd"
+                minTickGap={20}
+                tick={{
+                  fontSize: 12,
+                  fontWeight: 500,
+                  fill: "#000000",
+                }}
+              />
               <YAxis
                 domain={[1, 5]}
                 ticks={[1, 2, 3, 4, 5]}
                 tickMargin={4}
-                tick={{ fontSize: 12, fill: "#000000" }}
+                tickLine={false}
+                axisLine={false}
+                tick={{
+                  fontSize: 12,
+                  fontWeight: 500,
+                  fill: "#000000",
+                }}
                 tickFormatter={(v) =>
                   ["Low", "Moderate", "Elevated", "High", "Crisis"][v - 1]
                 }
-                tickLine={false}
-                axisLine={false}
+                className="hidden sm:block"
               >
                 <Label
                   value="Risk"
@@ -79,9 +98,9 @@ export default function ClinicLineChart() {
                   position="left"
                   offset={12}
                   fill="#6C6C6C"
-                  style={{ fill: "#6C6C6C" }}
                   fontSize={14}
                   fontWeight={400}
+                  className="hidden md:block"
                 />
               </YAxis>
               <ChartTooltip content={<ChartTooltipContent />} />
@@ -89,19 +108,19 @@ export default function ClinicLineChart() {
                 type="monotone"
                 dataKey="average"
                 stroke="#E3C5A7"
-                strokeWidth={3}
+                strokeWidth={5}
                 dot={false}
               />
               <Line
                 type="monotone"
                 dataKey="month"
                 stroke="#50AEA8"
-                strokeWidth={3}
+                strokeWidth={5}
                 dot={false}
               />
             </LineChart>
           </ChartContainer>
-          <div className="text-[14px] font-[400] text-[#6C6C6C] ml-271 flex flex-row">
+          <div className="text-[14px] font-[400] text-[#6C6C6C] text-right mt-1">
             <h1>This month</h1>
           </div>
         </CardContent>

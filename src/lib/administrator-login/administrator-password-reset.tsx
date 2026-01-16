@@ -33,21 +33,23 @@ export default function AdminPasswordReset() {
       confirmPassword: "",
     },
   });
+
   const [focusedField, setFocusedField] = useState<string | null>(null);
+
   const onSubmit = (values: LoginFormValues) => {
     console.log("Form submitted:", values);
-    navigate("/admin/login"); 
+    navigate("/admin/login");
   };
+
   return (
-    <div className="min-h-screen bg-[#031C3D] relative pb-[360px]">
-      <div className="flex flex-col items-center relative z-10">
+    <div className="relative w-full bg-[#031C3D] min-h-screen overflow-hidden pb-[260px] sm:pb-[320px] lg:pb-[360px]">
+      <div className="flex flex-col items-center relative z-10 px-4">
         <img
           src="/KP Logo - White .png"
           alt="KP Logo"
-          className="h-48 w-100 ml-5"
+          className="sm:h-36 lg:h-48 w-auto ml-5"
         />
-        <h1 className="text-[20px] font-[600] text-white mt-4">Password Reset</h1>
-
+        <h1 className="text-[20px] font-[600] text-white mt-2">Password Reset</h1>
         <Card className="w-full max-w-sm mt-2 rounded-[24px]">
           <CardContent>
             <Form {...form}>
@@ -115,7 +117,7 @@ export default function AdminPasswordReset() {
                 />
                 <Button
                   type="submit"
-                  className="w-full text-[14px] font-[600] h-10 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer mt-2"
+                  className="w-full text-[14px] sm:text-[15px] font-[600] h-10 sm:h-12 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer mt-2"
                 >
                   Continue
                 </Button>
@@ -124,11 +126,11 @@ export default function AdminPasswordReset() {
           </CardContent>
         </Card>
       </div>
-      <div className="absolute left-0 top-[50vh] z-0">
+      <div className="absolute left-0 top-[55vh] sm:top-[52vh] lg:top-[45vh] z-0">
         <img
           src="/KindPath Social Media Ads - Users.png"
           alt="KP Social Media Ads - Users"
-          className="h-140 w-106"
+          className="h-96 sm:h-[420px] lg:h-[560px] w-auto"
         />
       </div>
     </div>

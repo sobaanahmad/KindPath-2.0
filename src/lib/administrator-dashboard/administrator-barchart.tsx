@@ -26,13 +26,15 @@ const chartData = [
 
 export default function AdministratorBarchart() {
   return (
-    <div className="h-100 w-140 p-4 relative">
+    <div className="flex-1 min-w-[200px] p-4">
       <div className="flex items-center gap-2">
-        <h1 className="text-[16px] font-[700] sansfont">Risk Levels by Severity</h1>
-        <CircleQuestionMark className="size-4 text-white bg-black rounded-full p-0.5" />
+        <h1 className="text-[16px] font-[700] sansfont">
+          Risk Levels by Severity
+        </h1>
+        <CircleQuestionMark className="size-5 ml-2 -mt-0.5 fill-black text-white" />
       </div>
-      <Card className="shadow-none border-none absolute left-0">
-        <ChartContainer className="h-[250px] w-[470px] text-black" config={{}}>
+      <Card className="shadow-none border-none">
+        <ChartContainer className="h-[300px] w-full text-black" config={{}}>
           <BarChart
             data={chartData}
             margin={{ top: 20, right: 20, left: 20, bottom: 40 }}

@@ -24,28 +24,26 @@ export default function AdministratorLogin() {
       password: "",
     },
   });
-
   const [emailFocused, setEmailFocused] = useState(false);
   const [passwordFocused, setPasswordFocused] = useState(false);
-
   const onSubmit = (values: LoginFormValues) => {
     console.log("Form submitted:", values);
     navigate("/admin/dashboard");
   };
 
   return (
-    <div className="min-h-screen bg-[#031C3D] relative pb-[360px]">
-      <div className="flex flex-col items-center relative z-10">
+    <div className="relative w-full bg-[#031C3D] min-h-screen overflow-hidden pb-[260px] sm:pb-[320px] lg:pb-[360px]">
+      <div className="relative z-10 flex flex-col items-center px-4 sm:px-6">
         <img
           src="/KP Logo - White .png"
           alt="KP Logo"
-          className="h-48 w-100 ml-5"
+          className="h-28 sm:h-36 lg:h-48 w-auto ml-5"
         />
-        <h1 className="text-[20px] font-[600] text-white mt-4">
+        <h1 className="mt-2 text-[20px] font-[600] text-white">
           Administrator Login
         </h1>
-        <Card className="w-full max-w-sm mt-2 rounded-[24px]">
-          <CardContent>
+        <Card className="mt-2 w-full max-w-sm rounded-[24px]">
+          <CardContent className="pt-2">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -61,17 +59,17 @@ export default function AdministratorLogin() {
                         id="email"
                         type="email"
                         placeholder=" "
-                        className="border-none shadow-none bg-[#F2F2F7] text-[13px] font-[500] text-black h-15 px-3 rounded-[12px]"
+                        className="h-15 rounded-[12px] bg-[#F2F2F7] px-3 text-[13px] font-[500] text-black border-none shadow-none"
                         onFocus={() => setEmailFocused(true)}
                         onBlur={() => setEmailFocused(false)}
                       />
-                      <div className="absolute left-3 top-3 pointer-events-none flex flex-col space-y-1.5">
+                      <div className="pointer-events-none absolute left-3 top-3 flex flex-col space-y-1.5">
                         {!emailFocused && !field.value && (
                           <>
-                            <span className="text-black text-[14px] font-[500] leading-4">
+                            <span className="text-[14px] font-[500] leading-4 text-black">
                               Email
                             </span>
-                            <span className="text-[#8E8E93] text-[13px] font-[500] leading-4">
+                            <span className="text-[13px] font-[500] leading-4 text-[#8E8E93]">
                               enter a suitable email
                             </span>
                           </>
@@ -91,17 +89,17 @@ export default function AdministratorLogin() {
                         id="password"
                         type="password"
                         placeholder=" "
-                        className="border-none shadow-none bg-[#F2F2F7] text-[13px] font-[500] text-black h-15 px-3 rounded-[12px]"
+                        className="h-15 rounded-[12px] bg-[#F2F2F7] px-3 text-[13px] font-[500] text-black border-none shadow-none"
                         onFocus={() => setPasswordFocused(true)}
                         onBlur={() => setPasswordFocused(false)}
                       />
-                      <div className="absolute left-3 top-3 pointer-events-none flex flex-col space-y-1.5">
+                      <div className="pointer-events-none absolute left-3 top-3 flex flex-col space-y-1.5">
                         {!passwordFocused && !field.value && (
                           <>
-                            <span className="text-black text-[14px] font-[500] leading-4">
+                            <span className="text-[14px] font-[500] leading-4 text-black">
                               Password
                             </span>
-                            <span className="text-[#8E8E93] text-[13px] font-[500] leading-4">
+                            <span className="text-[13px] font-[500] leading-4 text-[#8E8E93]">
                               a password you can easily remember
                             </span>
                           </>
@@ -113,13 +111,14 @@ export default function AdministratorLogin() {
                 />
                 <Link
                   to="/admin/forgot-password"
-                  className="inline-block -mt-3 mb-2 hover:text-[#074799] text-[14px] font-[600] text-[#8E8E93]"
+                  className="-mt-3 mb-2 text-[14px] font-[600] text-[#8E8E93] hover:text-[#074799]"
                 >
                   Forgot Password?
                 </Link>
+
                 <Button
                   type="submit"
-                  className="w-full h-10 text-[14px] font-[600] bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer"
+                  className="h-12 w-full rounded-[12px] bg-[#074799] text-[14px] font-[600] hover:bg-[#074799] cursor-pointer"
                 >
                   Log In
                 </Button>
@@ -128,11 +127,11 @@ export default function AdministratorLogin() {
           </CardContent>
         </Card>
       </div>
-      <div className="absolute left-0 top-[50vh] z-0">
+      <div className="absolute left-0 top-[55vh] sm:top-[52vh] lg:top-[45vh] z-0">
         <img
           src="/KindPath Social Media Ads - Users.png"
           alt="KP Social Media Ads - Users"
-          className="h-140 w-106"
+          className="h-96 sm:h-[420px] lg:h-[560px] w-auto"
         />
       </div>
     </div>

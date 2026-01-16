@@ -7,7 +7,9 @@ import {
   Label,
   LabelList,
 } from "recharts";
+
 import { Card } from "@/components/ui/card";
+
 import {
   ChartContainer,
   ChartTooltip,
@@ -15,23 +17,23 @@ import {
 } from "@/components/ui/chart";
 
 const chartData = [
-  { severity: "Crisis", Users: 18, fill: "#50AEA8" },
-  { severity: "High", Users: 22, fill: "#FF725C" },
-  { severity: "Moderate", Users: 18, fill: "#6766DE" },
-  { severity: "Elevated", Users: 30, fill: "#D39D36" },
-  { severity: "Low", Users: 30, fill: "#25D255" },
+  { severity: "Crisis", users: 18, fill: "#50AEA8" },
+  { severity: "High", users: 22, fill: "#FF725C" },
+  { severity: "Moderate", users: 18, fill: "#6766DE" },
+  { severity: "Elevated", users: 30, fill: "#D39D36" },
+  { severity: "Low", users: 30, fill: "#25D255" },
 ];
 
 export default function ClinicBarchart() {
   return (
-    <div className="h-100 w-140 p-4 relative">
+    <div className="flex-1 min-w-[200px] p-4">
       <div className="flex items-center gap-2">
-        <h1 className="text-[16px] font-[700] sansfont ml-5">
+        <h1 className="text-[16px] font-[700] sansfont">
           Risk Levels by Severity
         </h1>
       </div>
-      <Card className="shadow-none border-none absolute left-8">
-        <ChartContainer className="h-[250px] w-[470px] text-black" config={{}}>
+      <Card className="shadow-none border-none">
+        <ChartContainer className="h-[300px] w-full text-black" config={{}}>
           <BarChart
             data={chartData}
             margin={{ top: 20, right: 20, left: 20, bottom: 40 }}
@@ -68,10 +70,10 @@ export default function ClinicBarchart() {
               />
             </YAxis>
             <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
-            <Bar dataKey="Users" radius={0}>
+            <Bar dataKey="users" radius={0}>
               <LabelList
                 fill="#000000"
-                dataKey="Users"
+                dataKey="users"
                 position="top"
                 className="text-[14px] font-[400]"
               />

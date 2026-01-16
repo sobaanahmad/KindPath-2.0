@@ -46,7 +46,6 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
-
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -136,7 +135,6 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Ensure body has no margin/padding */
 body {
   margin: 0;
   padding: 0;
@@ -146,9 +144,7 @@ body {
 .sansfont {
   font-family: "DM Sans", sans-serif;
 }
-/* Neue Haas Display Fonts */
 
-/* XXThin */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayXXThin.ttf") format("truetype");
@@ -162,7 +158,6 @@ body {
   font-style: italic;
 }
 
-/* XThin */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayXThin.ttf") format("truetype");
@@ -176,7 +171,6 @@ body {
   font-style: italic;
 }
 
-/* Thin */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayThin.ttf") format("truetype");
@@ -190,7 +184,6 @@ body {
   font-style: italic;
 }
 
-/* Light */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayLight.ttf") format("truetype");
@@ -204,7 +197,6 @@ body {
   font-style: italic;
 }
 
-/* Roman / Regular */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayRoman.ttf") format("truetype");
@@ -218,7 +210,6 @@ body {
   font-style: italic;
 }
 
-/* Medium */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayMedium.ttf") format("truetype");
@@ -232,7 +223,6 @@ body {
   font-style: italic;
 }
 
-/* Bold */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayBold.ttf") format("truetype");
@@ -246,7 +236,6 @@ body {
   font-style: italic;
 }
 
-/* Black */
 @font-face {
   font-family: "NeueHaasDisplay";
   src: url("./fonts/NeueHaasDisplayBlack.ttf") format("truetype");

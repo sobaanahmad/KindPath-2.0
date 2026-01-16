@@ -8,16 +8,22 @@ import AdministratorBarchart from "./administrator-barchart";
 
 export default function AdministratorDashboard() {
   return (
-    <>
-      <AdministratorHeader />
+    <div className="flex min-h-screen w-full">
       <AdministratorSidebar />
-      <AdministratorCards />
-      <AdministratorLineChart />
-      <div className="flex flex-row gap-30">
-      <AdministratorEvents />
-      <AdministratorBarchart />
-      </div>
-      <AdministratorTable />
-    </>
+      <main className="flex-1 flex flex-col">
+        <AdministratorHeader />
+        <div className="flex-1 p-4 sm:p-6 space-y-3 overflow-auto">
+          <AdministratorCards />
+          <AdministratorLineChart />
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 mt-8 lg:mt-15">
+            <AdministratorEvents />
+            <div className=" mr-30">
+              <AdministratorBarchart />
+            </div>
+          </div>
+          <AdministratorTable />
+        </div>
+      </main>
+    </div>
   );
 }

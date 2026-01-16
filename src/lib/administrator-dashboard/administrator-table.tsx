@@ -1041,10 +1041,10 @@ const AdministratorTable = () => {
   }, [currentPage]);
 
   return (
-    <div className="h-235 ml-52 flex flex-col gap-1.5 border border-gray-200 rounded-[8px] mb-15 -mt-15 mr-5">
-      <div className="w-full max-w-6xl flex flex-row gap-2 mb-5 mt-5 ml-2">
+    <div className="w-full flex flex-col gap-1.5 border border-gray-200 rounded-[8px] pb-6">
+      <div className="w-full flex flex-row flex-wrap gap-2 p-4 mt-2">
         <ButtonGroup>
-          <div className="relative w-70">
+          <div className="relative w-65">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 size-5" />
             <Input
               placeholder="Search"
@@ -1054,7 +1054,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-24 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-23 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             State
@@ -1063,7 +1063,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-31 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-30 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             User Type
@@ -1072,7 +1072,7 @@ const AdministratorTable = () => {
         </ButtonGroup>
         <ButtonGroup>
           <Button
-            className="rounded-[8px] w-36 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
+            className="rounded-[8px] w-35 py-6 bg-white border text-black text-[14px] font-[400] cursor-pointer sansfont"
             variant="secondary"
           >
             Clinic Name
@@ -1106,7 +1106,7 @@ const AdministratorTable = () => {
           </Button>
         </ButtonGroup>
       </div>
-      <div className="mt-2 pl-2 py-2 pr-2">
+      <div className="mt-2 pl-4 py-2 pr-0">
         <Table>
           <TableHeader className="[&_tr>th]:bg-[#162958] [&_tr>th]:hover:bg-[#162958] text-white h-13">
             <TableRow>
@@ -1139,14 +1139,22 @@ const AdministratorTable = () => {
           <TableBody>
             {paginatedInvoices.map((invoice, index) => (
               <TableRow key={`${invoice.userid}-${index}`}>
-                <TableCell className="py-6 sansfont">{invoice.userid}</TableCell>
+                <TableCell className="py-6 sansfont">
+                  {invoice.userid}
+                </TableCell>
                 <TableCell className="sansfont">{invoice.usertype}</TableCell>
                 <TableCell className="sansfont">{invoice.state}</TableCell>
                 <TableCell className="sansfont">{invoice.signupdate}</TableCell>
-                <TableCell className="sansfont">{invoice.supportareas}</TableCell>
+                <TableCell className="sansfont">
+                  {invoice.supportareas}
+                </TableCell>
                 <TableCell className="sansfont">{invoice.lastactive}</TableCell>
-                <TableCell className="sansfont">{invoice.association}</TableCell>
-                <TableCell className="sansfont">{invoice.registrationtype}</TableCell>
+                <TableCell className="sansfont">
+                  {invoice.association}
+                </TableCell>
+                <TableCell className="sansfont">
+                  {invoice.registrationtype}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

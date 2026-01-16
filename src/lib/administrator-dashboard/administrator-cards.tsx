@@ -6,46 +6,53 @@ import { CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function AdministratorCards() {
   return (
-    <>
-      <div className="flex flex-row gap-2 absolute top-30">
-        <ButtonGroup className="ml-52">
-          <Button className="cursor-pointer rounded-[8px] w-15 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
+    <div className="space-y-4">
+      <div className="flex flex-wrap items-center gap-2 lg:flex-nowrap">
+        <ButtonGroup>
+          <Button className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-15 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
             All
           </Button>
         </ButtonGroup>
-        <ButtonGroup className="ml-147">
-          <Button className="cursor-pointer rounded-[8px] w-25 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
+        <div className="hidden xl:flex flex-1" />
+        <ButtonGroup>
+          <Button className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-25 h-12.5 bg-[#EDF1F8] hover:bg-[#EDF1F8] text-black text-[14px] font-[400] sansfont">
             This Month
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button variant="secondary" className="cursor-pointer rounded-[8px] w-26 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont">
+          <Button
+            variant="secondary"
+            className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-26 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont"
+          >
             This Year
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button variant="secondary" className="cursor-pointer rounded-[8px] w-37 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont">
+          <Button
+            variant="secondary"
+            className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-37 py-6 bg-white text-black text-[14px] font-[400] border border-gray-200 sansfont flex items-center gap-2"
+          >
             Custom Date
-            <ChevronDown className="cursor-pointer size-4" />
+            <ChevronDown className="size-4" />
           </Button>
         </ButtonGroup>
         <ButtonGroup>
-          <Button className="cursor-pointer rounded-[8px] w-35 py-6 bg-[#162958] hover:bg-[#162958] text-white text-[14px] font-[400] sansfont">
+          <Button className="cursor-pointer rounded-[8px] w-full sm:w-auto lg:w-35 py-6 bg-[#162958] hover:bg-[#162958] text-white text-[14px] font-[400] sansfont">
             Download Data
           </Button>
         </ButtonGroup>
       </div>
-      <div className="flex flex-row gap-2 w-full absolute top-49">
-        <Card className="w-[182px] h-[135px] rounded-[8px] relative ml-52 border border-gray-200 shadow-none">
-          <CardHeader>
-            <CardTitle className="text-[14px] font-[500] absolute top-4 left-3 sansfont">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 gap-3 w-full">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
               Connect + Subscribers
             </CardTitle>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-3 text-black sansfont">
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               156
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-3 text-[#D22E25] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#D22E25] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowDown className="size-3 mt-1" />
                 11% from last month
               </div>
@@ -53,16 +60,16 @@ export default function AdministratorCards() {
             <CardAction />
           </CardHeader>
         </Card>
-        <Card className="w-[182px] h-[135px] rounded-[8px] relative border border-gray-200 shadow-none">
-          <CardHeader>
-            <CardTitle className="text-[14px] font-[500] absolute top-4 left-3 sansfont">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
               Connect Subscribers
             </CardTitle>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-3 text-black sansfont">
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               25
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-3 text-[#25D255] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#25D255] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowUp className="size-3 mt-1" />
                 18% from last month
               </div>
@@ -70,16 +77,16 @@ export default function AdministratorCards() {
             <CardAction />
           </CardHeader>
         </Card>
-        <Card className="w-[178px] h-[135px] rounded-[8px] relative border border-gray-200 shadow-none">
-          <CardHeader>
-            <CardTitle className="text-[14px] font-[500] absolute top-4 left-3 sansfont">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
               Clinic/Health Systems
             </CardTitle>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-3 text-black sansfont">
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               4
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-3 text-[#25D255] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#25D255] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowUp className="size-3 mt-1" />
                 7% from last month
               </div>
@@ -87,16 +94,16 @@ export default function AdministratorCards() {
             <CardAction />
           </CardHeader>
         </Card>
-        <Card className="w-[178px] h-[135px] rounded-[8px] relative border border-gray-200 shadow-none">
-          <CardHeader>
-            <CardTitle className="text-[14px] font-[500] absolute top-4 left-3 sansfont">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
               Total Providers
             </CardTitle>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-3 text-black sansfont">
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               43
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-3 text-[#25D255] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#25D255] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowUp className="size-3 mt-1" />
                 7% from last month
               </div>
@@ -104,16 +111,16 @@ export default function AdministratorCards() {
             <CardAction />
           </CardHeader>
         </Card>
-        <Card className="w-[229px] h-[135px] rounded-[8px] relative border border-gray-200 shadow-none">
-          <CardHeader>
-            <CardTitle className="text-[14px] font-[500] absolute top-4 left-2 sansfont">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
               Connect Subscription Revenue
             </CardTitle>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-2 text-black sansfont">
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               $4,289
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-2 text-[#D22E25] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#D22E25] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowDown className="size-3 mt-1" />
                 18% from last month
               </div>
@@ -121,16 +128,16 @@ export default function AdministratorCards() {
             <CardAction />
           </CardHeader>
         </Card>
-        <Card className="w-[185px] h-[135px] rounded-[8px] relative border border-gray-200 shadow-none">
-          <CardHeader>
-            <CardTitle className="text-[14px] font-[500] absolute top-4 left-2 sansfont">
+        <Card className="h-[150px] rounded-[8px] border border-gray-200 shadow-none">
+          <CardHeader className="p-1">
+            <CardTitle className="text-[14px] font-[500] sansfont ml-4 -mt-2">
               Health System Revenue
             </CardTitle>
-            <CardDescription className="text-[40px] font-[500] absolute top-9 left-3 text-black sansfont">
+            <CardDescription className="text-[40px] font-[500] text-black sansfont ml-4 -mt-2">
               1.9M
             </CardDescription>
-            <CardDescription className="text-[14px] font-[400] absolute top-20 left-3 text-[#25D255] sansfont">
-              <div className="flex gap-1 mt-4">
+            <CardDescription className="text-[14px] font-[400] text-[#25D255] sansfont ml-4 -mt-2">
+              <div className="flex gap-1">
                 <ArrowUp className="size-3 mt-1" />
                 2.3% from last month
               </div>
@@ -139,6 +146,6 @@ export default function AdministratorCards() {
           </CardHeader>
         </Card>
       </div>
-    </>
+    </div>
   );
 }

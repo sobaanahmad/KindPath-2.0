@@ -26,7 +26,6 @@ const loginSchema = z
   });
 
 type LoginFormValues = z.infer<typeof loginSchema>;
-
 export default function ClinicForgotPassword() {
   const navigate = useNavigate();
   const form = useForm<LoginFormValues>({
@@ -45,14 +44,16 @@ export default function ClinicForgotPassword() {
   };
 
   return (
-    <div className="min-h-screen bg-[#031C3D] relative pb-[360px]">
-      <div className="flex flex-col items-center relative z-10">
+    <div className="relative w-full bg-[#031C3D] min-h-screen overflow-hidden pb-[260px] sm:pb-[320px] lg:pb-[360px]">
+      <div className="flex flex-col items-center relative z-10 px-4">
         <img
           src="/KP Logo - White .png"
           alt="KP Logo"
-          className="h-48 w-100 ml-5"
+          className="sm:h-36 lg:h-48 w-auto w-100 ml-5"
         />
-        <h1 className="text-[20px] font-[600] text-white mt-4">Change Password</h1>
+        <h1 className="text-[20px] font-[600] text-white mt-2">
+          Change Password
+        </h1>
         <Card className="w-full max-w-sm mt-2 rounded-[24px]">
           <CardContent>
             <Form {...form}>
@@ -149,7 +150,7 @@ export default function ClinicForgotPassword() {
                 />
                 <Button
                   type="submit"
-                  className="w-full text-[14px] font-[600] h-10 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer"
+                  className="w-full text-[14px] font-[600] h-12 bg-[#074799] hover:bg-[#074799] rounded-[12px] cursor-pointer"
                 >
                   Continue
                 </Button>
@@ -158,11 +159,11 @@ export default function ClinicForgotPassword() {
           </CardContent>
         </Card>
       </div>
-      <div className="absolute left-0 top-[50vh] z-0">
+      <div className="absolute left-0 top-[55vh] sm:top-[52vh] lg:top-[45vh] z-0">
         <img
           src="/KindPath Social Media Ads - Users.png"
           alt="KP Social Media Ads - Users"
-          className="h-140 w-106"
+          className="h-96 sm:h-[420px] lg:h-[560px] w-auto"
         />
       </div>
     </div>
